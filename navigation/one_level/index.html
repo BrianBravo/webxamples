@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-touch-fullscreen" content="yes" />
+
+  <link rel="stylesheet" type="text/css" href="css/site_style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <title>Webxample // One Level Navigation Menu</title>
+</head>
+<body>
+  <header>
+    <button class="mobile"><i class="fa fa-bars"></i></button>
+    <h1>One Level Navigation Menu</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Welcome</a></li>
+        <li><a href="#">The Menu</a></li>
+        <li><a href="#">Discounts</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Visit Us</a></li>
+        <li><a href="#">Reservations</a></li>
+        <div class="clear"></div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    [main content]
+  </main>
+  <footer>
+    [footer]
+  </footer>
+  <div class="mq-tracker"></div>
+</body>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+  $(function() {
+    $('header button').on('click', function(){
+      var navEl = $('header nav');
+      if(navEl.is(":visible"))
+        navEl.hide();
+      else
+        navEl.show();
+    });
+  });
+</script>
+</html>
